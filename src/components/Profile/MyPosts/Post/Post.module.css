@@ -6,6 +6,7 @@
 }
 
 .item {
-    color: greenyellow;
+    color: black;
     background-color: aquamarine;
+    font-weight: bolder;
 }

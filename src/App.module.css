@@ -1,4 +1,4 @@
-.app-wrapper {
+.appwrapper {
     margin: auto;
     width: 1200px;
     display: grid;
@@ -10,11 +10,8 @@
     grid-template-columns: 2fr 10fr;
     /*grid-gap: 10px;*/
     background-color: gold;
+    font-family: Calibri;
 
 }
 
-.content img {
-    height: 60px;
-    width: 100%;
-}
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import s from './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Dialogssss from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
+import s from "./App.module.css"
 
 const App = () => {
     return (
         <BrowserRouter>
-            <div className='app-wrapper'>
+            <div className={s.appwrapper}>
                 <Header/>
                 <Navbar/>
                 <div className={s.appWrapperContent}>
