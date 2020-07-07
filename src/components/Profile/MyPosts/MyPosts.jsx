@@ -4,19 +4,21 @@ import Post from "./Post/Post";
 
 const MyPosts = () => {
     return (
-        <div className={s.content}>
+        <div className={s.postsBlock}>
             <div>
-                my posts
+                <h3>My posts</h3>
                 <div>
                     <textarea></textarea>
-                    <button>Add post</button>
-                    <button>Remove</button>
+                    <div>
+                        <button>Add post</button>
+                        <button>Remove</button>
+                    </div>
                 </div>
                 <div className={s.posts}>
                     <Post likesCount='6' message='Hi, how are you?'/>
-                    <Post likesCount='4' message="It's my first post" />
-                    <Post />
-                    <Post />
+                    <Post likesCount='4' message="It's my first post"/>
+                    <Post/>
+                    <Post/>
                     <Post/>
 
                 </div>
