@@ -9,16 +9,16 @@ import s from "./App.module.css"
 const App = (props) => {
 
     return (
-        <BrowserRouter>
             <div className={s.appwrapper}>
                 <Header/>
                 <Navbar/>
                 <div className={s.appWrapperContent}>
                     <Route path="/dialogs" render={ () => <Dialogssss state={props.state.messagesPage} dialogs={props.state.messagesPage}/>}/>
-                    <Route path="/profile" render={ () => <Profile state={props.state.profilePage}/>}/>
+                    <Route path="/profile" render={ () => <Profile updateNewPostText={props.updateNewPostText}
+                                                                   profilePage={props.state.profilePage}
+                                                                   addPost={props.addPost}/>}/>
                 </div>
             </div>
-        </BrowserRouter>
     );
 
 }
