@@ -2,6 +2,9 @@
     grid-area: n;
     background-color: blue;
     padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-variant: all-small-caps;
 }
 
 .item a {
